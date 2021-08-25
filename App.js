@@ -1,18 +1,16 @@
-import * as React from 'react';
-import { Text, Image, View, StyleSheet } from 'react-native';
-import Constants from 'expo-constants';
-import MoonMap from './components/MoonMap'
+console.log('[AstroHub]: Starting AstroHub...');
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <MoonMap />
-    </View>
-  );
+import React, { Component } from 'react';
+import { View, SafeAreaView, Platform } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import Stack from './Navigators/WrapNav';
+
+export default class App extends Component {
+  render() {
+    return (
+      <NavigationContainer>
+        <Stack.StackNavigator />
+      </NavigationContainer>
+    );
+  }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-});
