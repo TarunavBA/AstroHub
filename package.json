@@ -16,7 +16,7 @@
     "react-native-web": "0.17.1",
     "gsap": "^3.5.1",
     "axios": "*",
-    "three": "^0.119.1",
+    "three": ">=0.125.0",
     "expo-gl": "~11.0.3",
     "firebase": "7.9.0",
     "expo-three": "5.0.0",
