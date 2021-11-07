@@ -23,9 +23,6 @@ export default class ProfileScreen extends Component {
       let result = await firebase
         .auth()
         .signInWithCredential(credential)
-        .then((result) => {
-          console.log('[Firebase]: Fetch and sign-in successful!...');
-        })
         .catch((error) => {
           var errorMessage = error.message;
           console.log(
@@ -33,6 +30,7 @@ export default class ProfileScreen extends Component {
           );
           // ...
         });
+      //console.log(result);
       if (result.additionalUserInfo.isNewUser) {
         console.log('[Firebase]: New User, Adding details to database...');
         firebase
@@ -43,6 +41,7 @@ export default class ProfileScreen extends Component {
             profile_picture: firebase.auth().currentUser.photoURL,
             name: firebase.auth().currentUser.displayName,
             current_theme: 'dark',
+            show_name: 'no',
           })
           .then(function (snapshot) {
             console.log('[Firebase]: Save successful!');
@@ -65,7 +64,7 @@ export default class ProfileScreen extends Component {
       if (result.type === 'success') {
         this.onSignIn(result);
         //console.log(result.accessToken);
-        this.props.navigation.navigate('dashboard');
+        this.props.navigation.navigate('app');
       } else {
         return { cancelled: true };
       }

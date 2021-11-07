@@ -45,7 +45,9 @@ export default class DrawerNavigator extends Component {
         swipeEnabled={true}
         drawerContent={(props) => <CustomSidebarMenu {...props} />}>
         <Drawer.Screen name="Home" component={Screens.Home} />
+        <Drawer.Screen name="Community" component={Screens.Community} />
         <Drawer.Screen name="Star Map" component={StarMap} />
+        <Drawer.Screen name="Profile" component={Screens.Profile} />
       </Drawer.Navigator>
     );
   }

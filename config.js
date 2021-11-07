@@ -2,7 +2,6 @@
 
 console.log('[AstroHub]: Initializing AstroHub Firebase...')
 const firebase = require('firebase');
-const APP_BASE = 'https://your-unique-url.firebaseapp.com/';
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {

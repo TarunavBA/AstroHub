@@ -8,6 +8,9 @@ import {
 } from 'react-native';
 
 export default class DashboardScreen extends Component {
+  componentDidMount() {
+    this.props.navigation.navigate('app');
+  }
   render() {
     return (
       <View>
@@ -21,7 +24,7 @@ export default class DashboardScreen extends Component {
             height: '100%',
             alignItems: 'center',
           }}>
-          <Text style={{ color: 'white' }}>{'\n\nDASHBOARD'}</Text> 
+          <Text style={{ color: 'white' }}>{'\n\n'}</Text>
         </ImageBackground>
       </View>
     );
