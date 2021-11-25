@@ -8,7 +8,7 @@ export default class Loading extends Component {
   async componentDidMount() {
     localdb.bgImage = {
       uri:
-        'https://raw.githubusercontent.com/somePythonProgrammer/AstroHub/main/assets/background.jpg',
+        './assets/background.jpg',
     };
     localdb.googleIcon = await require('../assets/google-icon.png');
     if (firebase.auth().currentUser === null) {

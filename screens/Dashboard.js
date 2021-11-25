@@ -17,7 +17,7 @@ export default class DashboardScreen extends Component {
         <ImageBackground
           source={{
             uri:
-              'https://raw.githubusercontent.com/somePythonProgrammer/AstroHub/main/assets/background.jpg',
+              './assets/background.jpg',
           }}
           style={{
             width: '100%',

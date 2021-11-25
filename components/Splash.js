@@ -13,10 +13,10 @@ export default class Splash extends Component {
     return (
       <View>
         <ImageBackground
-          source={{uri:'https://raw.githubusercontent.com/somePythonProgrammer/AstroHub/main/assets/background.jpg'}}
+          source={{uri:'./assets/background.jpg'}}
           style={{ width: '100%', height: '100%', alignItems: 'center' }}>
           <Image
-            source={require('../assets/AstroHubLogo_transparent.png')}
+            source={require('../assets/astrohub_logo_transparent.png')}
             style={{
               width: 200,
               height: 200,

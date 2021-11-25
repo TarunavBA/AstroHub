@@ -8,15 +8,15 @@
     "eject": "expo eject"
   },
   "dependencies": {
-    "expo": "~43.0.0",
+    "expo": "~43.0.2",
     "expo-status-bar": "~1.1.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
-    "react-native": "0.64.2",
+    "react-native": "0.64.3",
     "react-native-web": "0.17.1",
     "gsap": "^3.5.1",
     "axios": "*",
-    "three": ">=0.125.0",
+    "three": "^0.119.1",
     "expo-gl": "~11.0.3",
     "firebase": "7.9.0",
     "expo-three": "5.0.0",
